@@ -1,0 +1,51 @@
+.subscription-listdata {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  margin: 30px auto;
+  border-radius: 6px;
+  background: white;
+}
+
+.subscriber-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.subscriber-table th,
+.subscriber-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.subscriber-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+.subscriber-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.subscriber-table tbody tr:hover {
+  background-color: #ddd;
+}
+
+@media (max-width: 800px) {
+  .subscription-listdata {
+    width: 98%;
+    padding: 10px;
+    margin: 20px auto;
+  }
+
+  .subscriber-table th,
+  .subscriber-table td {
+    padding: 6px;
+    font-size: 10px;
+  }
+}
